@@ -31,7 +31,7 @@ function Navbars() {
        {/* <img style = {{width: '287px' ,height: '134px'}}  */}
        {/* src={logo} alt='logo'></img> */}
     </div>
-     <Toggle/> 
+     {/* <Toggle/>  */}
         <button className='hamburger' onClick={ () => {
           setIsNavExpanded(!IsNavExpanded);
         }}>
