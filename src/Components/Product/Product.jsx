@@ -77,7 +77,7 @@ const Description = [
   },
   {
     Id: 3,
-    title: 'EV Charhing Station',
+    title: 'EV Charging Station',
     f1: '4 Secure Mobile Charging ports',
       f2:'3-EV charging Socket for 2-wheelers',
       
