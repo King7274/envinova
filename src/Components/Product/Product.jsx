@@ -1,9 +1,9 @@
 import React from 'react';
 // import ProductCard from './ProductCard';
 import './Product.css';
-import product1 from './P-image/product1.JPG';
-import product2 from './P-image/product2.JPG';
-import product3 from './P-image/product3.JPG';
+import product1 from './P-image/product1.jpg';
+import product2 from './P-image/product2.jpg';
+import product3 from './P-image/product3.jpg';
 import { useState } from 'react';
 
 
