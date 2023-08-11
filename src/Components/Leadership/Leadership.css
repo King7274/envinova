@@ -1,0 +1,224 @@
+.Leadership {
+    text-align: center;
+  }
+  .L-tital{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    height: 5rem;
+    align-items: center;
+    color: black;
+   
+  }
+  .L-body{
+    display: flex;
+   
+    height: 40rem;
+    justify-content: center;
+   left: 10%;
+   right: 10%;
+    width: 80%;
+    align-items: center;
+    margin-left: 15%;
+  }
+  .L-left{
+    flex: 1;
+    position: relative;
+  }
+  .L-right{
+    flex: 1;
+    position: relative;
+  }
+  .expert-card {
+    height: 420px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .expert-img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    margin-left: auto;
+    transition: all ease 0.4s;
+  }
+  .expert-link{
+    position: absolute;
+    left: 10%;
+    bottom: 38%;
+    text-align: center;
+    background-color: white;
+    outline: 3px solid var(--orange);
+    outline-offset: -3px;
+    border-radius: 9999px;
+  }
+  .expert-link1{
+    position: absolute;
+    left: 10%;
+    bottom: 38%;
+    text-align: center;
+    background-color: white;
+    outline: 3px solid var(--orange);
+    outline-offset: -3px;
+    border-radius: 9999px;
+   
+  }
+  .expert-social{
+    margin: 0;
+    padding: 28px 20px 0 20px;
+    list-style-type: none;
+    
+  }
+  .expert-social1{
+    margin: 0;
+    padding: 28px 20px 0 20px;
+    list-style-type: none;
+    display: none;
+  }
+  .share-button{
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    /* background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%); */
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border: 2px solid var(--orange);
+
+  }
+  .share-button:hover{
+    color:var(--orange);
+  }
+  .expert-content{
+    background-color: var(--theme-color);
+    padding: 180px 50px 35px 50px;
+    margin: -150px 0 0 0;
+    max-width: 340px;
+    transition: all ease 0.4s;
+  }
+  .expert-name{
+    font-size: 26px;
+    margin: 0;
+  }
+  .expert-degi{
+    font-weight: 500;
+    color: var(--theme-color2);
+    display: block;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 0 0 15px 0;
+    margin: 0 0 20px 0;
+    transition: all ease 0.4s;
+  }
+  .expert-number{
+
+    font-size: 18px;
+    font-weight: 700;
+   
+    transition: all ease 0.4s;
+   
+   display: flex;
+   justify-content: center !important;
+   gap: 1rem;
+  }
+
+  .expert-card:hover {
+    background-color: #162a46;
+    color: #fb982f;
+  }
+  
+  .expert-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .expert-card h3 {
+    margin-top: 0;
+  }
+  
+  .expert-card p {
+    color: gray;
+  }
+  
+  @keyframes bubbleAnimationExpert {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .expert-card img {
+    transition: transform 0.3s;
+  }
+  .expert-card img:hover {
+    animation: bubbleAnimationExpert 1s ;
+  }
+
+  @media  screen and (max-width: 600px) {
+
+
+    .Leadership{
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+    .L-tital{
+      position: relative;
+      height: 20rem;
+    }
+    .L-body {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 0;
+      gap: 4rem;
+      /* position: relative; */
+      
+      /* Additional styles for mobile */
+      width: 80%;
+      /* padding: 0 20px; */
+      margin-left: 0;
+    }
+  
+    /* .L-left,
+    .L-right {
+      position: static; /* Remove the relative positioning */
+    /* }
+    
+    .expert-card {
+      width: 100%; /* Take up the full width */
+      /* margin: 20px 0; /* Adjust margin for mobile */
+      /* padding: 20px 10px; Adjust padding for mobile */
+    /* } */
+    
+    /* .expert-img { */
+      /* width: 100%; Make the image responsive */
+      /* height: auto; Allow height to adjust automatically */
+      /* margin: 0 auto 10px; Center the image */
+    /* } */
+    
+    /* .expert-link, */
+    /* .expert-link1 { */
+      /* position: static; Remove the absolute positioning */
+      /* margin-top: 10px; Add some spacing */
+    /* } */ 
+  }
+    
+  

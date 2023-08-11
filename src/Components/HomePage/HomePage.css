@@ -1,0 +1,93 @@
+.HomePage{
+    position: relative;
+    z-index: 0;
+}
+
+
+
+.ContainerTitle {
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .ContainerSubtitle {
+    margin: 24px auto 0;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .ContainerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.1)
+  }
+  .H-Button{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    gap: 50px;
+  }
+  .H-button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    background:  linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);;
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: 500px;
+
+  }
+  .H-button:hover{
+  color: white;
+  background: var(--blue);
+  
+  }
+
+  @media screen and (max-width: 450px){
+
+    .ContainerTitle{
+        font-size: 2rem;
+    }
+    .ContainerSubtitle{
+        font-size: 1.3rem;
+        margin-bottom: 40%;
+    }
+
+    .H-button{
+        
+        width: 150px;
+        height: 50px;
+        font-size: 1.5rem;
+        font-weight: 400px;
+        
+    }
+    .H-Button{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        margin-left: 20%;
+        margin-bottom: 15%;
+        margin-top: -10%;
+       
+        
+    }
+    
+  }

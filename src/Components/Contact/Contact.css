@@ -1,0 +1,237 @@
+.contact{
+    /* margin-top: 80%; */
+    margin-bottom: 300px;
+}
+.c-title{
+    height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    
+    
+}
+
+
+.c-body{
+    display: flex;
+    
+    height: 50rem;
+    width: 100%;
+    color: black;
+    
+}
+
+.c-left{
+    flex: 1;
+    
+    padding: 4rem 4rem 4rem ;
+    margin-right: -2rem;
+    display: flex;
+    flex-direction: column;
+}
+.c-info{
+    flex: 2;
+    
+    
+}
+
+.card{
+    display: flex;
+    
+    height: 6rem;
+    width: 23rem;
+   
+    
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    /* border: 2px solid var(--orange); */
+    
+}
+.c-info-icon{
+    flex: 1;
+    
+    color: var(--blue);
+    
+
+}
+.c-info-icon:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+.c-info-data{
+    flex: 3;
+   
+
+}
+.d-title{
+    
+  
+   
+    margin-top: 0;
+   
+    
+
+}
+.d-info{
+  
+  gap: 0.5rem;
+ 
+    
+    
+}
+.c-map{
+    flex: 1;
+    border: 8px solid var(--orange);
+    width: 300px;
+   margin-top: 2rem;
+   margin-left: 6rem;
+  
+}
+.c-right{
+    flex: 1;
+    position: absolute;
+   background-color: var(--blue);
+   right: 7rem;
+   padding-left: 4rem;
+   padding-right: 4rem;
+   margin-top: 4rem;
+   padding-bottom: 2rem;
+}
+
+
+   
+.c-right-title{
+   
+    padding-top: 2rem;
+    height: 8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.c-form{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+.c-form>form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.text-padding{
+   position: relative;
+   top: 0.5rem;
+  
+}
+.c-form .user {
+    width: 25rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    
+    font-size: 16px;
+    text-align: left;
+}
+textarea{
+    height: 4rem!important;
+}
+.c-button{
+        
+    position: relative;
+    border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+    margin: 0 10px 10px 0;
+    width: 10rem;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%) ;
+}
+.c-button:hover{
+    cursor: pointer;
+    background: var(--orange) !important;
+    color: var(--blue);
+}
+
+@keyframes popAnimation {
+    0% {
+      transform: scale(1); /* Initial scale */
+    }
+    50% {
+      transform: scale(1.2); /* Scale to pop effect */
+    }
+    
+  }
+  .c-info-icon{
+    transition: transform 0.3s;
+  }
+  .c-info-icon:hover{
+    animation: popAnimation 1s;
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .contact{
+        margin-top: 300px;
+    }
+    .c-body{
+        flex-direction: column-reverse;
+        height: 100rem;
+        width: 100%;
+        
+    }
+    .c-right{
+        position: relative;
+        
+      
+       width: 60%;
+        left: 0.8rem;
+        
+       
+    
+    }
+    .c-left{
+        left: 0;
+        right: 0;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    .c-map{
+       
+        left: 0;
+        margin-left: 0;
+       margin-left: 10%;
+        display: flex;
+        justify-self: center;
+    }
+    
+    .card{
+        /* margin-left: 4rem;
+        margin-right: 0;
+        left: 4rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-right: 0px;
+        padding-right: -15%;
+        margin-left: 0px;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+   .c-form .user{
+        width: 18rem;
+    }
+    .c-right-title{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    
+  }

@@ -1,0 +1,138 @@
+.feature{
+    width: 80%;
+    height: auto;
+    
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+.f-title{
+    font-size: 1.5rem;
+    
+    height: 3rem;
+    align-items: center;
+    color: black;
+   
+    text-align: center;
+}
+.f-subtitle{
+    color: var(--blue);
+    text-align: center;
+    
+    margin-bottom: 2rem;
+}
+.f-image{
+   height: 700px;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: auto;
+    width: 70%;
+   margin-bottom: 30px;
+   transform: scale(0.8);
+}
+
+
+.feature-box {
+  
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  border: solid 2px black;
+  
+
+  }
+  
+  .feature-box-icon {
+    width: 80px;
+    height: 80px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.2);
+    margin-bottom: 20px;
+    color: var(--blue) !important;
+    margin-top: 20px;
+   
+  }
+  .feature-box:hover{
+   border:solid 4px var(--orange);
+  }
+  
+  .feature-box-title {
+    text-align: center;/* Assuming you want 6 items in a row */
+  }
+
+  .box{
+    margin-top: 40px;
+    display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Display 6 elements per row */
+  grid-gap: 20px;
+
+ } 
+
+ @keyframes bubbleAnimationbox {
+    0% {
+      transform: scale(0.2);
+    }
+    50% {
+      transform: scale(0.24);
+    }
+    100%{
+      transform: scale(0.2);
+    }
+    
+  }
+
+  .feature-box-icon:hover{
+    animation: bubbleAnimationbox 1s forwards;
+  }
+
+  @media screen and (max-width: 450px){
+    
+    .f-title{
+          font-size: 1.2rem;
+        height: 5rem;
+    }
+    .f-subtitle{
+        font-size: 10px;
+    }
+    .f-image{
+        height: auto;
+        width: 80%;
+        transform: scale(1);
+    }
+
+    .box{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+    }
+
+    .feature-box-icon{
+
+        height: 50px;
+        transform: scale(0.15);
+    }
+    .feature-box-title{
+        font-size:14px;
+    }
+
+    @keyframes newbubbleAnimation {
+        0% {
+          transform: scale(0.15);
+        }
+        50% {
+          transform: scale(0.18);
+        }
+        100%{
+          transform: scale(0.15);
+        }
+        
+      }
+
+      .feature-box-icon:hover{
+        animation: newbubbleAnimation 1s forwards;
+      }
+    
+  }

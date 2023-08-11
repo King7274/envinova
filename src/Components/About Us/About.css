@@ -1,0 +1,260 @@
+.ContainerAbout{
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+color: black;
+background-color: white;
+width: 100%;
+text-transform: none;
+margin-bottom: 10rem;
+margin-top: 100px;
+position: relative;
+
+  
+}
+  
+
+.title{
+   
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    height: 5rem;
+    align-items: center;
+    color: black;
+    padding-bottom: 2rem;
+  
+}
+  
+
+.A-description{
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  
+  flex: 1;
+ 
+  width: 80%;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer !important;
+  padding-left: 2rem;
+  padding-right: 2rem; 
+  border: 2px solid var(--blue);
+  box-shadow: 0px 0px 2px 2px var(--orange); 
+  margin-bottom: 3%;
+    
+}
+
+.A-description:hover{
+    
+    color: white;
+    background-color: var(--blue);
+    
+}
+
+.Wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 90%;
+}
+
+.left{
+    margin-top: 5%;
+    flex: 0.8;
+    height: 36rem; /* Adjust as needed */
+    
+    box-shadow: 0px 0px 2px 2px var(--orange);
+}
+.M-icon{
+    margin-top: 25%;
+    align-items: center;
+    top: 5rem;
+    color: var(--orange);
+    cursor: pointer;
+}
+  
+
+
+.right{
+  margin-top: 4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Mission{
+flex: 1;
+background-color: var(--blue);
+display: flex;
+gap: 1rem;
+color: white;
+font-size: 1.3rem;
+/* box-shadow: 0px 0px 2px 2px var(--orange); */
+}
+
+.M-left >p{
+   
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+.V-left >p{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+.Vision{
+flex: 1;
+background-color: var(--blue);
+display: flex;
+gap: 1rem;
+color: white;
+font-size: 1.3rem;
+/* box-shadow: 0px 0px 2px 2px var(--orange); */
+}
+.M-left{
+  flex: 1.5;
+}
+.M-right{
+flex: 1;
+align-items: center;
+}
+.V-left{
+ flex: 1.5;
+}
+.V-right{
+ flex: 1;
+
+}
+  
+.M-title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--orange);
+    text-align: center;
+}
+.V-title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--orange);
+    text-align: center;
+}
+
+@keyframes popAnimation {
+    0% {
+      transform: scale(1); /* Initial scale */
+    }
+    50% {
+      transform: scale(1.2); /* Scale to pop effect */
+    }
+    
+  
+}
+
+.M-icon{
+  transition: transform 0.3s;
+  
+}
+.M-icon:hover{
+    
+  animation: popAnimation 1s;
+  color: white;
+}
+
+
+@media (max-width: 450px) {
+
+    .ContainerAbout {
+      height: auto;
+      margin-bottom: 5rem;
+      padding-left: 0;
+      padding-right: 0px;
+      margin-top: -50px;
+    }
+  
+    .title {
+      height: auto;
+      padding-bottom: 1rem;
+      text-align: center;
+      margin-top: 20%;
+    }
+  
+    .A-description {
+      margin-top: 10%;
+      width: 70%;
+      margin-bottom: 20%;
+      
+
+    }
+  
+    .Wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left {
+      flex: 1;
+      height: auto;
+      margin-top: 0;
+      box-shadow: none;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+      left: 0 !important;
+    }
+    .left-img{
+        flex: 1;
+        height: auto;
+        left: 0;
+        width: 90%;
+
+        margin-left: 5%;
+      margin-right: 0;
+        
+    }
+  
+    .right {
+      flex: 1;
+      margin-top: 4rem;
+    }
+  .M-title,
+  .V-title{
+    padding-top: 10%;
+  }
+    .Mission,
+    .Vision {
+      flex-direction: column;
+      width: 90%;
+      padding-left: 0;
+      padding-right: 0;
+      height: auto;
+      margin-left: 5%;
+    }
+  
+    .M-left,
+    .M-right,
+    .V-left,
+    .V-right {
+      flex: 1;
+      
+    }
+  
+    .M-icon {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

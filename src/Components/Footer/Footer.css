@@ -1,0 +1,94 @@
+.footer{
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -10rem;
+    background-color: var(--blue);
+    height: 250px;
+    padding-bottom: 5rem;
+    width: 98%;
+    margin-left: 1%;
+}
+.f-content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: 1rem; */
+    gap: 2rem;
+    color: var(--orange);
+
+}
+.icons{
+    display: flex;
+    gap: 2rem;
+    
+}
+.f-icons{
+    display: flex;
+  
+   color: var(--orange);
+
+}
+.f-icons:hover{
+    color: white;
+}
+
+.f-content>span{
+    padding-top: 8rem;
+    font-size: 2rem;
+}
+.f-content>span:hover{
+    color: white;
+}
+
+
+@keyframes bubbleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100%{
+      transform: scale(1);
+    }
+    
+  }
+  .f-icons:hover{
+    animation: bubbleAnimation 1s forwards;
+  }
+  .f-icons{
+    transition: 0.3 ease;
+  }
+
+ 
+@media screen and (max-width: 450px) {
+    
+    
+    .f-content>span{
+        padding-top: 6rem;
+        font-size: 1.3rem;
+    }
+    .f-icons{
+        transform: scale(1);
+    }
+    .f-content>h2{
+        font-size: 1.1rem;
+    }
+  
+}
+
+.curve-background {
+    background-color: #162a46;
+    position: relative;
+    height: 400px; /* Adjust the height as per your requirements */
+    overflow: hidden;
+    color: black;
+    width: 100%;
+  }
+  
+ 

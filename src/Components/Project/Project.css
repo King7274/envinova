@@ -1,0 +1,124 @@
+.Project{
+   margin-top: 400px;
+    height: 1000px;
+    
+    align-items: center;
+
+    
+
+    
+   
+}
+
+.P-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    align-items: center;
+    color: black;
+    text-align: center;
+    
+}
+
+.P-description{
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    
+    flex: 1;
+   
+    width: 80%;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer !important;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    border: 2px solid var(--blue);
+    box-shadow: 0px 0px 2px 2px var(--orange); 
+    margin-bottom: 3%;
+} 
+.P-description:hover{
+    border: 2px solid var(--orange);
+    box-shadow: 0px 0px 2px 2px var(--orange);
+    background-color: var(--blue);
+    color: white;
+}
+
+.P-Container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    
+    gap: 3rem;
+}
+
+.P-slider{
+    /* background-color: blueviolet !important; */
+   
+    flex: 3;
+    width: 80%;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    
+}
+
+.TreeDCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TreeDCarousel img {
+    display: none;
+  }
+
+
+@media  screen and (max-width: 450px) {
+    
+    .Project{
+       height: 1000px; 
+        
+    }
+    .P-title{
+        height: 10rem;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        font-size: 1.3;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 25%;
+    }
+    .P-slider{
+        width: 80%;
+
+        /* margin-left: 20%; */
+    }
+    .P-description{
+          margin-top: 20%;
+          width: 80%;
+          margin-bottom: 0;
+    }
+    .P-Container{
+        width: 320px;
+        margin-left: 10%;
+        
+        /* height: 500px; */
+    }
+
+    .ThreeDCarousel{
+        width: 100vw;
+        overflow: hidden;
+        align-items: center;
+    }
+    .ThreeDCarousel img:first-child{
+        display: block;
+    }
+    
+   
+}
