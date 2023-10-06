@@ -15,9 +15,9 @@ const Contact = () => {
         e.preventDefault();
 
         // Replace these placeholders with your actual EmailJS values
-        const serviceID = 'YOUR_SERVICE_ID';
-        const templateID = 'YOUR_TEMPLATE_ID';
-        const userID = 'YOUR_USER_ID';
+        const serviceID = 'service_0vnd1y5';
+        const templateID = 'template_53qrt7m';
+        const userID = 'neR2rWC48Wg4BM5on';
 
         emailjs
             .sendForm(serviceID, templateID, form.current, userID)
