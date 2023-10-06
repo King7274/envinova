@@ -17,7 +17,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    /* margin-top: 1rem; */
     gap: 2rem;
     color: var(--orange);
 
@@ -29,9 +28,11 @@
 }
 .f-icons{
     display: flex;
-  
-   color: var(--orange);
+    color: var(--orange);
 
+}
+.f-icons>a{
+    color: transparent;
 }
 .f-icons:hover{
     color: white;
