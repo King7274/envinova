@@ -27,11 +27,8 @@ function Navbars() {
     <div className='n-wrapper' id='Navbars'>
     <div className='n-left'>
     <div className='n-logo'>
-       <LogoAnimation/>
-       {/* <img style = {{width: '287px' ,height: '134px'}}  */}
-       {/* src={logo} alt='logo'></img> */}
+    <LogoAnimation/>
     </div>
-     {/* <Toggle/>  */}
         <button className='hamburger' onClick={ () => {
           setIsNavExpanded(!IsNavExpanded);
         }}>
