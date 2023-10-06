@@ -26,9 +26,6 @@ const Footer = () => {
                  <div className='f-icons'>
                  <a href="https://www.linkedin.com/company/envinova-smartech/"><FaLinkedin  size = '3rem'/></a>
                  </div>
-                 <div className='f-icons'>
-                 <a href=""><FaTwitterSquare  size = '3rem'/></a>
-                 </div>
                  </div>
                  <h2 style={{color:'white'}}>2023 enviNova Smartech. All rights reserved</h2>
               
