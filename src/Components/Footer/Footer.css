@@ -32,7 +32,8 @@
 
 }
 .f-icons>a{
-    color: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 .f-icons:hover{
     color: white;
