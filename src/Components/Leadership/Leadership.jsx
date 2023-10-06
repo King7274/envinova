@@ -17,7 +17,8 @@ function Leadership() {
       </header>
       <div className='L-body'>
        
-            <div className='L-left'>
+          <div className='L-left'>
+          <a href="https://www.linkedin.com/in/arjun-mittal09/">
           <ExpertCard
            
             image={ExpertImage1}
@@ -27,8 +28,10 @@ function Leadership() {
             link = {link1}
             
           />
+          </a>
           </div>
           <div className='L-right'>
+          <a href="https://www.linkedin.com/in/ishankb29/">
           <ExpertCard
             
             image={ExpertImage2}
@@ -37,7 +40,7 @@ function Leadership() {
             whatsapp={'+919877262993'}
             link = {link1}
           />
-
+          </a>
           </div>
        
       </div>
