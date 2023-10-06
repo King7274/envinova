@@ -132,9 +132,6 @@
         margin-top: 1rem;
         
     }
-    .n-List li:hover{
-        /* background-color:white; */
-    }
      .expanded ul{
         display: block;
         
