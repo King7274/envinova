@@ -14,7 +14,7 @@ const Footer = () => {
           {/* <img src={Wave} alt = "" style={{width: '100%'}}/> */}
           
           <div className='f-content'>
-              <span><a href="mailto:envinovasmartech@gmail.com">envinovasmartech@gmail.com</a></span>
+              <a href="mailto:envinovasmartech@gmail.com"><span>envinovasmartech@gmail.com</span></a>
               <div className='icons'>
               {/* <div className='f-icons'>
                   <FaFacebook  size = '3rem  '
