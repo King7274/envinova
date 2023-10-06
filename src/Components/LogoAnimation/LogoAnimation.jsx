@@ -5,9 +5,7 @@ import './LogoAnimation.css';
 
 const  LogoAnimation = () => {
     return (
-      <div className="logo-container">
-        <img src={logo}  style ={{width: '287px' ,height: '100px'}} alt="Logo" className="logo-img" />
-      </div>
+        <img src={logo}  style ={{width: '287px' ,height: '68px'}} alt="Logo" className="logo-img" />
     );
   }
 
