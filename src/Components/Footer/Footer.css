@@ -43,8 +43,9 @@
 }
 .f-content>span>a{
     text-decoration: none;
+    color: var(--orange);
 }
-.f-content>span:hover{
+.f-content>span>a:hover{
     color: white;
 }
 
