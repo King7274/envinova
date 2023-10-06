@@ -17,14 +17,15 @@
     }
     
   }
-  
+  /*
   .logo-img {
-    transition: transform 0.3s; /* Add transition for smoother animation */
+    transition: transform 0.3s;
   }
   
   .logo-img:hover {
-    animation: popAnimation 1s; /* Apply the pop animation on hover */
+    animation: popAnimation 1s; 
   }
+  */
 
   @media screen  and (max-width:450px){
 
