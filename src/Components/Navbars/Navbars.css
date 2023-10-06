@@ -1,6 +1,6 @@
 .n-wrapper{
     padding-top: 10px;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -18,10 +18,7 @@
     font-weight: bold;
     margin-top: 0.7rem;
 }
-.n-logo > img:hover{
-    
-    
-}
+
 
 .hamburger {
     border: 0;
