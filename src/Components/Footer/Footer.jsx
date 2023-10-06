@@ -14,20 +14,20 @@ const Footer = () => {
           {/* <img src={Wave} alt = "" style={{width: '100%'}}/> */}
           
           <div className='f-content'>
-              <a href="mailto:envinovasmartech@gmail.com"><span>envinovasmartech@gmail.com</span></a>
+              <span><a href="mailto:envinovasmartech@gmail.com">envinovasmartech@gmail.com</a></span>
               <div className='icons'>
               {/* <div className='f-icons'>
                   <FaFacebook  size = '3rem  '
                   />
                   </div> */}
-                  <div className='f-icons'>
-                  <FaInstagramSquare  size = '3rem'/>
-                  </div>
                  <div className='f-icons'>
-                 <FaLinkedin  size = '3rem'/>
+                 <a href="https://www.instagram.com/envinovasmartech/"><FaInstagramSquare  size = '3rem'/></a>
                  </div>
                  <div className='f-icons'>
-                 <FaTwitterSquare  size = '3rem'/>
+                 <a href="https://www.linkedin.com/company/envinova-smartech/"><FaLinkedin  size = '3rem'/></a>
+                 </div>
+                 <div className='f-icons'>
+                 <a href=""><FaTwitterSquare  size = '3rem'/></a>
                  </div>
                  </div>
                  <h2 style={{color:'white'}}>2023 enviNova Smartech. All rights reserved</h2>
