@@ -16,10 +16,6 @@ const Footer = () => {
           <div className='f-content'>
               <span><a href="mailto:envinovasmartech@gmail.com">envinovasmartech@gmail.com</a></span>
               <div className='icons'>
-              {/* <div className='f-icons'>
-                  <FaFacebook  size = '3rem  '
-                  />
-                  </div> */}
                  <div className='f-icons'>
                  <a href="https://www.instagram.com/envinovasmartech/"><FaInstagramSquare  size = '3rem'/></a>
                  </div>
