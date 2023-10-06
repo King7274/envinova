@@ -56,9 +56,11 @@ const Contact = () => {
                     <h2 className="d-title"> Address</h2>
                  </div>
                  <div className="d-info">
-                 Sector 25, 
+                 Cabin 1, E-313, Sector 75, 
                  <br/>
-                 Chandigarh 160014
+                 Sahibzada Ajit Singh Nagar,
+                 <br/>
+                 Punjab 160055
                  </div>
                      
                  </div>
