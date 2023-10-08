@@ -14,7 +14,7 @@ const Contact = () => {
         e.preventDefault();
 
         // Replace these placeholders with your actual EmailJS values
-        const serviceID = 'service_jasl35p';
+        const serviceID = 'service_log97za';
         const templateID = 'template_egqmw7j';
         const userID = 'SSMkMrofD7Y8pv3kM';
 
