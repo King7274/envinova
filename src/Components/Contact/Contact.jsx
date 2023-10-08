@@ -19,18 +19,29 @@ const Contact = () => {
         const templateID = 'template_t0o6ypg';
         const userID = 'neR2rWC48Wg4BM5on';
 
-        emailjs
-            .sendForm(serviceID, templateID, form.current, userID)
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    setdone(true);
-                    form.current.reset(); // Reset the form
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
+        const userName = e.target.user_name.value;
+        const userEmail = e.target.user_email.value;
+        const userAddress = e.target.user_address.value;
+        const message = e.target.message.value;
+
+        // Prepare template parameters with dynamic data
+        const templateParams = {
+            user_name: userName,
+            from_email: userEmail,
+            message: message,
+            addr:userAddress,
+        };
+
+
+        emailjs.send(serviceID, templateID, templateParams, userID)
+        .then((result) => {
+            console.log(result.text);
+            setdone(true);
+            form.current.reset(); // Reset the form
+        })
+        .catch((error) => {
+            console.log(error.text);
+        });
     };
 
     return (

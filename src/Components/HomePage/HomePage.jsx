@@ -63,7 +63,7 @@ const HomePage = () => {
         slidingDuration: 500,
         slidingDelay: 100,
         shouldAutoplay: true,
-        shouldDisplayButtons: true,
+        shouldDisplayButtons: false,
         autoplayDuration: 100,
         height: "10vh",
         
