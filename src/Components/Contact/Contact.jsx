@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import './Contact.css';
 import { RiHome4Line } from 'react-icons/ri';
 import { RiPhoneLine } from 'react-icons/ri';
 import { TfiEmail } from 'react-icons/tfi';
 import Map from "../Map/Map";
-import emailjs from 'emailjs-com'; // Import the emailjs-com library
-import { useRef, useState } from "react";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
     const form = useRef();
-    const [done, setdone] = useState(false);
+    const [done, setDone] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -24,19 +23,17 @@ const Contact = () => {
         const userAddress = e.target.user_address.value;
         const message = e.target.message.value;
 
-        // Prepare template parameters with dynamic data
         const templateParams = {
             user_name: userName,
             from_email: userEmail,
+            addr: userAddress,
             message: message,
-            addr:userAddress,
         };
-
 
         emailjs.send(serviceID, templateID, templateParams, userID)
         .then((result) => {
             console.log(result.text);
-            setdone(true);
+            setDone(true);
             form.current.reset(); // Reset the form
         })
         .catch((error) => {
@@ -147,7 +144,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Contact;
